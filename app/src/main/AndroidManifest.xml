@@ -15,10 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.AActivity">
-        </activity>
-        <activity android:name=".activity.BActivity">
-        </activity>
+        <activity android:name=".activity.AActivity"></activity>
+        <activity android:name=".activity.BActivity"></activity>
+        <activity android:name=".fragment.FragmentActivity"></activity>
     </application>
 
 </manifest>

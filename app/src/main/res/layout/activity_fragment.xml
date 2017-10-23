@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wega.android.fragment.FragmentActivity">
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:id="@+id/add"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="add" />
+       <Button
+           android:id="@+id/remove"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:text="remove"/>
+       <Button
+           android:id="@+id/replace"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="replace"
+         />
+
+       <Button
+           android:id="@+id/log"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="log"/>
+   </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="show"/>
+            <Button
+                android:id="@+id/hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hide"/>
+
+            <Button
+                android:id="@+id/attach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="attach"
+
+              />
+            <Button
+                android:id="@+id/detach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="detach"
+              />
+
+        </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.wega.android.fragment.OneFragment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        />
+
+
+
+</LinearLayout>

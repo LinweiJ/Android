@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.wega.android.activity.AActivity;
+import com.wega.android.fragment.FragmentActivity;
 
 public class MainActivity extends AppCompatActivity {
     private String TAG;
@@ -19,6 +20,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, AActivity.class));
+            }
+        });
+        findViewById(R.id.btn_fragmentactivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, FragmentActivity.class));
             }
         });
     }
